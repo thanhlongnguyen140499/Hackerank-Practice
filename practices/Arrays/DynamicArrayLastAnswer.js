@@ -6,7 +6,7 @@ function readLine() {
   return readlineSync.question();
 }
 
-// #region SOLUTION 01: self-thinking
+// #region SOLUTION 01: self-thinking (NOT TRUE)
 // const dynamicArray = (n, queries) => {
 //   const rowSize = queries.length;
 //   let lastAnswer = 0;
