@@ -5,7 +5,9 @@ const readlineSync = require("readline-sync");
 
 # Input an array in a line
  readLine().split(" ").map((arrTemp) => parseInt(arrTemp, 10));
-
+ 
+ readLine().split(" ").map(Number);
+ 
 # Input multi array in a multi line
  for (let i = 0; i < q; i++) {
      arr[i] = readLine()
