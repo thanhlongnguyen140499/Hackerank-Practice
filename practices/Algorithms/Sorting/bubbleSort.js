@@ -1,3 +1,7 @@
+// #region BUBBLE SORT -  Big O
+// Time Complexity: O(n2)
+// Space Complexity: O(1)
+
 function bubbleSort(arr) {
   let n = arr.length;
   let swapped;
