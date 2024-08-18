@@ -19,3 +19,15 @@ const readlineSync = require("readline-sync");
 # Fill a 2 dimension array with given k value
 let arr = Array.from({ length: n }, () => k);
  => arr = [k, k, ..., k]
+
+# Config with fs write stream
+const filePath =
+    "/Users/edwardnguyen/Documents/Edward/Interview/node-hello-world/output.txt";
+const ws = fs.createWriteStream(filePath);
+
+# Readline
+const readlineSync = require("readline-sync");
+
+function readLine() {
+  return readlineSync.question();
+}
