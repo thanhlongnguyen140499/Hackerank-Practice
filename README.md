@@ -1,33 +1,27 @@
-# Hackerank-Practice
+# HackerRank Practice
 
-# Helper
-const readlineSync = require("readline-sync");
+Data structures and algorithms worked through in JavaScript, plus the notes I keep for interview prep.
 
-# Input an array in a line
- readLine().split(" ").map((arrTemp) => parseInt(arrTemp, 10));
- 
- readLine().split(" ").map(Number);
- 
-# Input multi array in a multi line
- for (let i = 0; i < q; i++) {
-     arr[i] = readLine()
-       .replace(/\s+$/g, "")
-       .split(" ")
-       .map((arrTemp) => parseInt(arrTemp, 10));
-   }
+## What's in here
 
-# Fill a 2 dimension array with given k value
-let arr = Array.from({ length: n }, () => k);
- => arr = [k, k, ..., k]
+```
+practices/
+├── Algorithms/       # sorting, searching, recursion, string and array problems
+├── DataStructure/    # implementations built from scratch
+└── OOP/              # object-oriented design exercises
 
-# Config with fs write stream
-const filePath =
-    "/Users/edwardnguyen/Documents/Edward/Interview/node-hello-world/output.txt";
-const ws = fs.createWriteStream(filePath);
+interviews/
+├── linkedList.js
+├── tree.js
+├── tree2.js
+└── graph.js
+```
 
-# Readline
-const readlineSync = require("readline-sync");
+`README_LOOP.md` collects the input-parsing boilerplate HackerRank problems always need — reading a line, splitting an array of ints — so it stops eating time at the start of every problem.
 
-function readLine() {
-  return readlineSync.question();
-}
+## Running a solution
+
+```bash
+npm install     # readline-sync, for problems that take stdin
+node practices/Algorithms/<file>.js
+```
